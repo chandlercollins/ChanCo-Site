@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChanCo LLC — Apps & Services</title>
+<meta name="description" content="ChanCo LLC builds simple, durable software.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0f172a;--fg:#e2e8f0;--muted:#94a3b8;--accent:#60a5fa}
+  *{box-sizing:border-box} body{margin:0;font:16px/1.6 Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg)}
+  .wrap{max-width:920px;margin:0 auto;padding:28px}
+  header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+  .logo{font-weight:800;letter-spacing:.5px}
+  nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+  nav a:hover{color:var(--fg)}
+  .hero{padding:72px 0}
+  .hero h1{font-size:clamp(28px,4vw,48px);line-height:1.1;margin:0 0 12px}
+  .btn{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--accent);color:#001b3a;font-weight:700;text-decoration:none}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:#111827;border:1px solid #1f2937;border-radius:16px;padding:18px}
+  footer{margin-top:56px;border-top:1px solid #1f2937;padding-top:18px;color:var(--muted);font-size:14px}
+</style></head><body>
+<div class="wrap">
+  <header>
+    <div class="logo">ChanCo LLC</div>
+    <nav>
+      <a href="/support.html">Support</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Simple, durable software.</h1>
+    <p>ChanCo LLC builds focused apps and offers lightweight consulting for product, growth, and infrastructure.</p>
+    <p><a class="btn" href="#get-the-app">Get the App</a></p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3 id="get-the-app">Our App</h3>
+      <p>One-liner about what your app does and who it’s for. Add App Store badge link when live.</p>
+    </div>
+    <div class="card">
+      <h3>Services</h3>
+      <p>Briefly list what you offer (e.g., product strategy, growth experiments, analytics setup).</p>
+    </div>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Email <a href="mailto:hello@chanco.llc">hello@chanco.llc</a> for support or inquiries.</p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> ChanCo LLC • <a href="/terms.html">Terms</a> • <a href="/privacy.html">Privacy</a>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>
